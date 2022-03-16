@@ -36,7 +36,6 @@ public class Exercise005Test {
         assertTrue(ex005.isPangram("the quick brown fox jumps over the lazy dog"));
     }
 
-    @Ignore("You can remove this @ignore annotation to run the test")
     @Test
     public void checkSentenceWithMixedUpperAndLowerCaseIsAPangram() {
         assertTrue(ex005.isPangram("The Five boXing wiZards Jump QuicklY"));
