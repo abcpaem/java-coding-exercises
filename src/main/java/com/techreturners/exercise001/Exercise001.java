@@ -23,7 +23,14 @@ public class Exercise001 {
     }
 
     public int countLinuxUsers(List<User> users) {
-        // Add your code here
-        return 0;
+        int linuxUsers = 0;
+        for (User user : users)
+        {
+            if (user.getType().equalsIgnoreCase("linux"))
+            {
+                linuxUsers++;
+            }
+        }
+        return linuxUsers;
     }
 }
