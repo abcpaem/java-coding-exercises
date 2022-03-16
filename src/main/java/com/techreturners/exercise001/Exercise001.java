@@ -14,8 +14,8 @@ public class Exercise001 {
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        // Add your code here
-        return 0.0;
+        double  priceWithVat = originalPrice + originalPrice * (vatRate / 100);
+        return Math.round(priceWithVat * 100.0) / 100.0;
     }
 
     public String reverse(String sentence) {
