@@ -56,7 +56,6 @@ public class Exercise005Test {
         assertTrue(ex005.isPangram("the_quick_brown_fox_jumps_over_the_lazy_dog"));
     }
 
-    @Ignore("You can remove this @ignore annotation to run the test")
     @Test
     public void checkSentenceWithNumbersIsAPangram() {
         assertTrue(ex005.isPangram("the 1 quick brown fox jumps over the 2 lazy dogs"));
