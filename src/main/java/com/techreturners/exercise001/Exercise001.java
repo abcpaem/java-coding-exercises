@@ -9,8 +9,8 @@ public class Exercise001 {
     }
 
     public String generateInitials(String firstName, String lastName) {
-        // Add your code here
-        return "";
+        String initials = firstName.substring(0,1).toUpperCase() + "." + lastName.substring(0,1).toUpperCase();
+        return initials;
     }
 
     public double addVat(double originalPrice, double vatRate) {
