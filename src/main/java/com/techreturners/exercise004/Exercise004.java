@@ -12,7 +12,8 @@ public class Exercise004 {
     }
 
     public Exercise004(LocalDateTime dateTime) {
-        this.dateTime = dateTime;
+        // Test is expecting the class to add 1000000000 seconds to the parameter sent to constructor
+        this.dateTime = dateTime.plusSeconds(1000000000);
     }
 
     public LocalDateTime getDateTime() {
