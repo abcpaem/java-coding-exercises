@@ -46,7 +46,6 @@ public class Exercise005Test {
         assertFalse(ex005.isPangram("the quick brown fo jumps over the lazy dog"));
     }
 
-    @Ignore("You can remove this @ignore annotation to run the test")
     @Test
     public void checkSentenceWithMissingLetterHIsNotAPangram() {
         assertFalse(ex005.isPangram("five boxing wizards jump quickly at it"));
