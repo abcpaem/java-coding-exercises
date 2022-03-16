@@ -11,7 +11,7 @@ public class Exercise003 {
     }
 
     String[] iceCreamFlavours() {
-        throw new UnsupportedOperationException(("You can delete this statement and add your code here."));
+        return iceCreamFlavours;
     }
 
 }
