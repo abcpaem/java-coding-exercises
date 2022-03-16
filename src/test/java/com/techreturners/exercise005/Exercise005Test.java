@@ -21,7 +21,6 @@ public class Exercise005Test {
         assertFalse(ex005.isPangram(""));
     }
 
-    @Ignore("You can remove this @ignore annotation to run the test")
     @Test
     public void checkPerfectLowerCaseSentenceIsAPangram() {
         assertTrue(ex005.isPangram("abcdefghijklmnopqrstuvwxyz"));
