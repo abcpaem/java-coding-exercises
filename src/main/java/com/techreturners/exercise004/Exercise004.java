@@ -4,16 +4,18 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Exercise004 {
+    private LocalDateTime dateTime;
 
     public Exercise004(LocalDate date) {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        // Test is expecting the class to add 1000000000 seconds to the parameter sent to constructor
+        this.dateTime = date.atStartOfDay().plusSeconds(1000000000);
     }
 
     public Exercise004(LocalDateTime dateTime) {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        this.dateTime = dateTime;
     }
 
     public LocalDateTime getDateTime() {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        return dateTime;
     }
 }
