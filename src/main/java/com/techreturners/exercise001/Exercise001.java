@@ -22,15 +22,12 @@ public class Exercise001 {
         return new StringBuilder(sentence).reverse().toString();
     }
 
-    public int countLinuxUsers(List<User> users) {
-        int linuxUsers = 0;
-        for (User user : users)
-        {
-            if (user.getType().equalsIgnoreCase("linux"))
-            {
-                linuxUsers++;
-            }
-        }
+    public long countLinuxUsers(List<User> users) {
+        long linuxUsers = users
+            .stream()
+            .filter(c -> c.getType().equalsIgnoreCase("linux"))
+            .count();
+
         return linuxUsers;
     }
 }
