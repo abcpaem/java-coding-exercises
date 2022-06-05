@@ -26,9 +26,9 @@ public class Exercise001Test {
     @Test
     public void checkInitials() {
         Exercise001 ex001 = new Exercise001();
-        assertEquals("F.B", ex001.generateInitials("Frederic", "Bonneville"));
-        assertEquals("K.M", ex001.generateInitials("Karl", "Marx"));
-        assertEquals("L.H", ex001.generateInitials("Lewis", "Hamilton"));
+        assertEquals("F.B.", ex001.generateInitials("Frederic", "Bonneville"));
+        assertEquals("K.M.", ex001.generateInitials("Karl", "Marx"));
+        assertEquals("L.H.", ex001.generateInitials("Lewis", "Hamilton"));
     }
 
     @Test
