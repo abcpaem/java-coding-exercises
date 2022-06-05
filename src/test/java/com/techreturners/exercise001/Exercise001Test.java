@@ -10,7 +10,7 @@ import org.junit.Test;
 public class Exercise001Test {
 
     @Test
-    public void checkHello() {
+    public void checkCapitalizeWord() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("Hello", ex001.capitalizeWord("hello"));
         assertEquals("The quick fox", ex001.capitalizeWord("the quick fox"));
@@ -18,7 +18,7 @@ public class Exercise001Test {
     }
 
     @Test
-    public void checkHelloAlreadyUppercase() {
+    public void checkCapitalizeWordWithAlreadyUppercase() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("Hello", ex001.capitalizeWord("Hello"));
     }
